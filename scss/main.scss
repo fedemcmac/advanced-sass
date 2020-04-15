@@ -43,3 +43,14 @@ h1 {
 // true, false
 
 // null
+
+
+$b: "border";
+$c: "color";
+
+h2 {
+    box-sizing: #{$b}-box;
+    #{$b}: 1px solid blue;
+    #{$c}: red;
+    background-#{$c}: green;
+}
