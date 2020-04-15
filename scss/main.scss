@@ -27,24 +27,19 @@
     border: 1px solid red;
 }
 
+// Maps
+$colors: (
+    "primary": red,
+    2: green,
+    3: blue
+);
 
+h1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, 2);
+}
 
+// Booleans
+// true, false
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// null
