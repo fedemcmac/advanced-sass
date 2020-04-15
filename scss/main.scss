@@ -62,8 +62,16 @@ $colors: (
     4: orange
 );
 
-@for $i from 1 to 4 {
+@for $i from 1 to 4 { // to not included, through all included
     .paragraph-#{$i} {
         background-color: map-get($colors, $i);
+    }
+}
+
+$colors: red green blue orange;
+
+@each $color in $colors {
+    .paragraph-#{$color} {
+        background-color: $color;
     }
 }
